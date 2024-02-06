@@ -1,0 +1,19 @@
+close all
+
+% t = [0:0.1:10];
+num = [1 2];
+den = [1 3 6];
+
+s=tf(num,den);
+stepplot(s);
+% for this transfer function the graphs is very detailed, when I asked  
+% MATLAB to calculate rise time it takes the time taken to reach 90% of the 
+% steady state value, but in lecture it said that it should be the time 
+% taken to reach 0 to 100% of the steady state value. Even CHATGPT also 
+% showed the same result as MATLAB. For now, I will follow the time for
+% 100% of the steady state value for an Under-Damped System
+
+% step(num,den);
+% grid on;
+% disp(s);
+% disp(stepinfo(s));
